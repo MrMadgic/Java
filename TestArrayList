@@ -1,0 +1,21 @@
+package Chapter1;
+
+public class TestArrayList {
+    public static void main(String[] args) {
+
+        int[] nums = {1, 2, 43, -5, 10, 12, -4, 6};
+
+        List<Integer> myList = new ArrayList<>();
+
+        for(int i = 0; i < nums.length; i++) {
+            myList.add(nums[i]);
+        }
+        System.out.println(myList);
+
+        myList.add(3, 1000);
+        System.out.println("new List:" + myList);
+
+        System.out.println(myList.get(4));
+    }
+}
+
